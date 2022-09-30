@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+<!-- HEADER -->
+<header>
+   
+
+
+</header>
+<header>
+    <div id="top-header">
+        <div class="container">
+
+            <ul class="header-links main-nav ">
+
+                <div class="header-logo">
+                    <a href="#" class="logo">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+               
+                {{#if user}}
+                
+                <li><a href="/view-post/{{this._id}}">post</a></li>
+
+
+                {{/if}}
+                {{#if user}}
+                <li><a href="/view-profile/{{user._id}}">profile</a></li>
+
+
+                {{/if}}
+
+            </ul>
+            <ul class="header-links pull-right">
+                <li>
+                    {{#if user}}
+                    <a href=""><i class="fa fa-user-o text-white"></i> {{user.firstname}}</a>
+
+                    {{/if}}
+                </li>
+                {{#if user}}
+                <li>
+                    <a href="/logout"> Logout</a>
+
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login"> Login</a>
+
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+    </div>
+</header>

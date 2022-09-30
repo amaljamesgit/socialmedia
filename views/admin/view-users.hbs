@@ -1,0 +1,36 @@
+<section>
+  <div class="container">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">PrivateStatus</th>
+          <th scope="col">BlockUser</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each user}}
+        <tr>
+          {{!-- <th scope="row">1</th> --}}
+          <td>{{this.firstname}}</td>
+          <td>{{this.lastname}}</td>
+          <td>{{this.dob}}</td>
+          <td>{{this.gender}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.phone}}</td>
+          <td>{{this.private}}</td>
+           <td> <a href="/admin/block-user/{{this._id}}" class="btn btn-danger"
+                            onclick=" return confirm('Are you want to block {{this.firstname}} ?')">Block</a></td>
+          {{!-- <td><img style="width: 50px;height:auto ;" src="{{this.image}}" alt=""></td> --}}
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

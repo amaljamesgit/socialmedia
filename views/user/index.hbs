@@ -1,0 +1,235 @@
+<!-- SECTION -->
+<div class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+
+			<!-- section title -->
+			<div class="col-md-12">
+				<div class="section-title">
+					<img src="images/logo1.png" alt="" style="width: 70px; height: 70px;">
+					<h3 class="title">latest Posts</h3>
+
+				</div>
+			</div>
+			<!-- /section title -->
+
+			<!-- Products tab & slick -->
+			<div class="col-md-12">
+				<div class="row">
+					<div class="products-tabs">
+						<!-- tab -->
+						<div id="tab1" class="tab-pane active">
+							<div class="products-slick" data-nav="#slick-nav-1">
+								<!-- product -->
+								{{#each post}}
+								<div class="product">
+									<div class="product-img">
+
+										<img src="/post-images/{{this._id}}.jpg" style="height: 40rem;" alt="...">
+										<div class="product-label">
+
+											<span class="new">FOLLOW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category"></p>
+										<h3 class="product-name"><a href="#"></a></h3>
+										<p class="product-category">{{this.title}}</p>
+										<h4 class="product-price">{{this.name}}<del class="product-old-price"></del>
+										</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+													class="tooltipp">Like</span></button>
+											<button class="add-to-compare"><i class="fa fa-exchange"></i><span
+													class="tooltipp">Follow</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">
+													view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button onclick="addToCart('{{this._id}}')" class="add-to-cart-btn"> Add
+											comment</button>
+									</div>
+								</div>
+								{{/each}}
+								<!-- /product -->
+
+
+							</div>
+							<div id="slick-nav-1" class="products-slick-nav"></div>
+						</div>
+						<!-- /tab -->
+					</div>
+				</div>
+			</div>
+			<!-- Products tab & slick -->
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<!-- HOT DEAL SECTION -->
+<div id="hot-deal" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-6 "><br><br>
+				<h1>SPEAK FREELY</h1><br>
+				<p>say "hello" to a different messaging<br> experience.An unexpected focus on privacy,
+					<br>combined with all of the features you expect
+				</p><br>
+
+				<br> <a href="" class="btn btn-primary ml-auto">GET SIGNAL</a>
+			</div>
+			<div class="col-md-3">
+				<img src="images/i.png" height="400px" width="300px" class="d-block w-100" alt="...">
+			</div>
+			<div class="col-md-3">
+				<img src="images/i.png" height="400px" width="300px" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /HOT DEAL SECTION -->
+
+<!-- SECTION -->
+<div class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+
+			<!-- section title -->
+			<div class="col-md-12">
+				<div class="section-title">
+					<img src="images/logo1.png" alt="" style="width: auto; height:40px;">
+					<h3 class="title">Top features</h3>
+
+				</div>
+			</div>
+			<!-- /section title -->
+
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<!-- container -->
+<div class="container">
+	<!-- row -->
+	<div class="row">
+
+		<div class="col-md-6 "><br><br>
+			<div class="card" >
+				<img src="images/say.png" class="card-img-top" alt="..." style="width: auto; height: 430px;">
+				<div class="card-body ">
+					<h2 class="card-title text-center ">Say Anything</h2>
+					<p class="card-text text-center">
+						Share text,voice messages,photos,videos,GIFs and files for free.<br>
+						Signal uses your phone's data connection so you can avoid SMS and MMS fees.</p>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 "><br>
+			<div class="card ">
+				<img src="images/speak.png" class="card-img-top" alt="..." style="width: auto; height: 420px;">
+				<div class="card-body">
+					<h2 class="card-title text-center">Speak Freely</h2>
+					<p class="card-text text-center">Make crystal-clear voice and video calls to people who live across<br>
+					town,or across the ocean,with no long-distance charges.</p>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /row -->
+	<div class="row">
+
+		<div class="col-md-6 "><br><br>
+			<div class="card" >
+				<img src="images/privacy.png" class="card-img-top" alt="..." style="width: auto; height: 430px;">
+				<div class="card-body ">
+					<h2 class="card-title text-center ">Make Privacy Stick</h2>
+					<p class="card-text text-center">Add a new layer of expression to your conversations with<br>
+					 encrypted stickers. You can also create and share your own sticker packs.</p>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 "><br>
+			<div class="card ">
+				<img src="images/group.png" class="card-img-top" alt="..." style="width: auto; height: 420px;">
+				<div class="card-body">
+					<h2 class="card-title text-center">Get Together With Groups</h2>
+					<p class="card-text text-center">Group chats make it easy connected to your family,<br>
+					friends,and coworkers.</p>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /row -->
+</div>
+<!-- /container -->
+
+
+
+
+
+<!-- NEWSLETTER -->
+<div id="contact" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="newsletter">
+					<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+					<form>
+						<input class="input" type="email" placeholder="Enter Your Email">
+						<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+					</form>
+					<ul class="newsletter-follow">
+						<li>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /NEWSLETTER -->
